@@ -1,0 +1,139 @@
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    
+    #banner-image {
+        width: 100%;
+        height: 300px;
+        background-image: url("/assets/mobile-splash-background.jpg");
+        background-repeat: no-repeat;
+    }
+    h2 {
+        margin: 0 0 0 40px;
+        padding-top: 20px;
+        font-family: roboto;
+        font-size: 18pt;
+        color: #11170E;
+    }
+    h3 {
+        margin: 0 0 0 40px;
+        padding-top: 10px;
+        font-family: Adelle PE;
+        color: #860043;
+        font-stretch: extra-expanded;
+    }
+    h4 {
+        margin: 10px 20px 0 0;
+        padding-top: 10px;
+        font-family: roboto;
+        color: #145814;
+        float:right;
+    }
+    section {
+        position: relative;
+        margin: 20px 0 0 60px;
+    }
+    .mat-nav-list .mat-list-item {
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    #banner-image {
+        width: 100%;
+        height: 1024px;
+        background-image: url("/assets/designer-background-768-1024.jpg");
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+        padding-top: 20px;
+        font-family: roboto;
+        font-size: 18pt;
+        color: #11170E;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    #banner-image {
+        width: 100%;
+        height: 768px;
+        background-image: url("/assets/designer-background-1024-768.jpg");
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+        padding-top: 20px;
+        font-family: roboto;
+        font-size: 18pt;
+        color: #11170E;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    #banner-image {
+        width: 100%;
+        height: 1366px;
+        background-image: url("/assets/designer-background-1024-1366.jpg");
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+        padding-top: 20px;
+        font-family: roboto;
+        font-size: 18pt;
+        color: #11170E;
+    }
+
+}
+/* iPad pro */
+@media screen and (min-width: 1366px) and (max-width: 1366px) {
+    #banner-image {
+        width: 100%;
+        height: 1024px;
+        background-image: url("/assets/designer-background-1366-1024.jpg");
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+        padding-top: 20px;
+        font-family: roboto;
+        font-size: 18pt;
+        color: #11170E;
+    }
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1921px) {
+    #banner-image {
+        width: 100%;
+        height: 1000px;
+        background-image: url("/assets/designer-background-desktop.jpg");
+        
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+        padding-top: 20px;
+        font-family: roboto;
+        font-size: 18pt;
+        color: #11170E;
+    }
+
+}
+
+
+
+
+
+
+
