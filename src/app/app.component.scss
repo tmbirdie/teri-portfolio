@@ -2,6 +2,10 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
   display:block
 }
 
+button {
+  border: 1px solid black;display: block; margin: 0 auto;
+}
+
 .background-img {
   background-image: url('../assets/designer-background-desktop.jpg');
   min-height: 100%;
@@ -21,6 +25,7 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
 .padding-large{
   padding:12px 24px!important
 }
+
 
 .overlay{
   position:fixed;
