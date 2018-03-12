@@ -1,3 +1,29 @@
-<p>
-  about-me works!
-</p>
+<mat-toolbar>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/home">Home</button>
+    <button mat-menu-item>Help</button>
+  </mat-menu>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+
+</mat-toolbar>
+
+<section class="bio-text">
+  <h3>Bio</h3>
+</section>
+
+
+<section class="about-section">
+  <img class="image" aria-label="teri bio pic" src="../../assets/TeriProfPic.png"><br>
+  <p>I have been in the web development space for over 10 years.  I am very proficient with responsive web design and development, usability research, and information architecture.
+
+  <p>My front-end development skills include HTML5, CSS, JavaScript, Angular, TypeScript, JSON and .NET Technologies, as well as Node.js.</p>
+
+  <p>My UX/UI design skills include Adobe Creative Suite for wireframes, mocks, and graphic design.  Proficient with Axure and Adobe XD for low-fidelity wireframing, and Adobe Illustrator and Photoshop for high-fidelity mocks.</p>
+
+    <p>I specialize in bringing fast, intelligent solutions as a UX/UI Developer and Designer to any project.</p>
+
+</section>
+

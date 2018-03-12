@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatButtonModule, MatCheckboxModule, MatListModule, MatIconModule } from '@angular/material';
+import { AppMaterialModules } from './material.module';
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -18,8 +18,8 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule,
-    MatButtonModule, MatCheckboxModule, MatListModule, MatIconModule, AppRoutingModule
+    BrowserModule, BrowserAnimationsModule, AppRoutingModule,
+    AppMaterialModules, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

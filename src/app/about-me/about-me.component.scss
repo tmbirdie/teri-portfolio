@@ -1,0 +1,38 @@
+.about-section {
+  height: auto;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  border: 1px solid #880E4F;
+}
+
+.mat-toolbar {
+  background-color: #11170E;
+  color: #F0F0F0;
+}
+
+.bio-text {
+  color: #145814;
+  text-align: center;
+  font-family: "Adelle PE";
+  position: relative;
+  top: 20px;
+}
+
+p {
+  font-size: .9em;
+}
+
+img {
+  display: block; margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
