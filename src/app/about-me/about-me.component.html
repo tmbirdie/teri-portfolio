@@ -2,7 +2,7 @@
 
   <mat-menu #menu="matMenu">
     <button mat-menu-item routerLink="/home">Home</button>
-    <button mat-menu-item>Help</button>
+    <button mat-menu-item routerLink="/help" >Help</button>
   </mat-menu>
   <button mat-icon-button [matMenuTriggerFor]="menu">
     <mat-icon>more_vert</mat-icon>
@@ -11,11 +11,12 @@
 </mat-toolbar>
 
 <section class="bio-text">
-  <h3>Bio</h3>
+  <h4>Bio</h4>
+  <p>{{todaysDate | date:'medium'}}</p>
 </section>
 
-
-<section class="about-section">
+<!--<iframe src="https://www.icloud.com/keynote/0sj9uSy0vqr-9dKFc-IMk4szg?embed=true" width="640" height="500" frameborder="0" allowfullscreen="1" referrer="no-referrer"></iframe>-->
+<section class="about-section medium">
   <img class="image" aria-label="teri bio pic" src="../../assets/TeriProfPic.png"><br>
   <p>I have been in the web development space for over 10 years.  I am very proficient with responsive web design and development, usability research, and information architecture.
 

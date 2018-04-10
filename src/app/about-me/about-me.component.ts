@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DateTimeNowService } from '../shared/date-time-now.service';
 
 @Component({
   selector: 'app-about-me',
@@ -7,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
+  public todaysDate: Date;
 
-  constructor() { }
+
+  constructor(private dateTimeNowService: DateTimeNowService) { }
 
   ngOnInit() {
+
+    this.showTodaysDate();
+  }
+
+  public showTodaysDate() {
+    this.todaysDate = this.dateTimeNowService.getDateTimeNow();
+
   }
 
 
