@@ -12,6 +12,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { DateTimeNowService } from './shared/date-time-now.service';
+import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
+import { ProfessionalProjectsComponent } from './professional-projects/professional-projects.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { DateTimeNowService } from './shared/date-time-now.service';
     HomeComponent,
     SkillsComponent,
     WorkComponent,
-    ContactComponent
+    ContactComponent,
+    PersonalProjectsComponent,
+    ProfessionalProjectsComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, AppRoutingModule,
