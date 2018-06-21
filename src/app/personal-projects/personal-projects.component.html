@@ -3,9 +3,9 @@
   <mat-menu #menu="matMenu">
     <button mat-menu-item routerLink="/home">Home</button>
     <button mat-menu-item routerLink="/about">About</button>
-    <button mat-menu-item routerLink="/personal-projects" >Personal Projects</button>
-    <button mat-menu-item routerLink="/professional-projects" >Professional Projects</button>
-    <button mat-menu-item routerLink="/resume" >Resume</button>
+    <button mat-menu-item routerLink="/personal-projects">Personal Projects</button>
+    <button mat-menu-item routerLink="/professional-projects">Professional Projects</button>
+    <button mat-menu-item routerLink="/resume">Resume</button>
   </mat-menu>
 
   <button mat-icon-button [matMenuTriggerFor]="menu">
@@ -13,3 +13,35 @@
   </button>
 
 </mat-toolbar>
+<div class="container">
+  <br><h2>Personal Projects</h2>
+
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Description</th>
+      <th>Project Type</th>
+      <th>Company</th>
+      <th>Rating</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of portfolioList">
+      <td>{{p.description}}</td>
+      <td>{{p.projectType}}</td>
+      <td>{{p.company}}</td>
+      <td>{{p.starRating}}</td>
+      <td>
+        <a class="btn btn-primary"
+           [routerLink]="['/personal-projects-edit', p.id]">
+          Edit
+        </a>
+      </td>
+    </tr>
+    </tbody>
+
+  </table>
+</div>
+</div>

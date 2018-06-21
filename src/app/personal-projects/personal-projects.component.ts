@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Portfolio} from "../shared/models/portfolio-model";
+import {PortfolioService} from "../shared/services/portfolio.service";
 
 @Component({
   selector: 'app-personal-projects',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalProjectsComponent implements OnInit {
 
-  constructor() { }
+  portfolioList: Portfolio[];
+
+  constructor(private service: PortfolioService) {
+  }
 
   ngOnInit() {
+    this.service.getPortfolioList().subscribe((data) => {
+      this.portfolioList = data;
+    });
   }
 
 }
