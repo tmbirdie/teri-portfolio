@@ -36,7 +36,7 @@ export class PortfolioService {
   }
 
   updatePortfolioItem(portfolioItem: Portfolio) {
-    return this.http.put<Portfolio>('/api/portfolioList/' + portfolioItem, options)
+    return this.http.put<Portfolio>('/api/portfolioList/', portfolioItem, options)
       .pipe(catchError(this.handleError<Portfolio>('updatePortfolioItem')));
   }
 
