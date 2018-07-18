@@ -1,17 +1,25 @@
-<mat-toolbar>
-
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="/home">Home</button>
-    <button mat-menu-item routerLink="/about">About</button>
-    <button mat-menu-item routerLink="/personal-projects" >Personal Projects</button>
-    <button mat-menu-item routerLink="/professional-projects" >Professional Projects</button>
-    <button mat-menu-item routerLink="/resume" >Resume</button>
-  </mat-menu>
-  <button mat-icon-button [matMenuTriggerFor]="menu">
-    <mat-icon>more_vert</mat-icon>
-  </button>
-
-</mat-toolbar>
+<mdb-navbar SideClass="navbar navbar-light navbar-expand-lg navbar-expand-md blue-grey lighten-5" >
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" routerLink="/home">Home</a></mdb-navbar-brand>
+  <!-- Collapsible content -->
+  <links>
+    <ul class="navbar-nav mr-auto" style="color: #000;">
+      <li class="nav-item">
+        <a routerLink="/about" class="nav-link waves-light" mdbWavesEffect>About<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/personal-projects" class="nav-link waves-light" mdbWavesEffect>Personal Projects</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/personal-projects" class="nav-link waves-light" mdbWavesEffect>Professional Projects</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/resume" class="nav-link waves-light" mdbWavesEffect>Resume</a>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+</mdb-navbar>
 
 <section class="bio-text">
   <h4>Bio</h4>

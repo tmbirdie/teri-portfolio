@@ -100,6 +100,15 @@ button {
   text-align:center!important
 }
 
+.align-text-left {
+  text-align: left;
+}
+
+.align-text-right {
+  text-align: right;
+}
+
+
 .text-white,.w3-hover-text-white:hover{
   color:#fff!important
 }
@@ -114,5 +123,32 @@ button {
 }
 @keyframes opacity{
   from{opacity:0} to{opacity:1}}
+
+@media (max-width: 575px) {
+  #hello {
+    display: none;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  #teri-title {
+    text-align: center;
+  }
+  .for-mobile {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .for-mobile {
+    margin-top: 80px;
+  }
+  #hello {
+    display: none;
+    text-align: center;
+  }
+
+}
 
 
