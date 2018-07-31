@@ -11,6 +11,7 @@ import {PortfolioData} from "./shared/models/portfolio-data";
 
 import {AppMaterialModules} from './material.module';
 import {AppComponent} from './app.component';
+import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import {AboutMeComponent} from './about-me/about-me.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {AppRoutingModule} from './app-routing.module';
@@ -26,6 +27,7 @@ import {ProfessionalProjectsComponent} from './professional-projects/professiona
 @NgModule({
   declarations: [
     AppComponent,
+    NavBarComponent,
     AboutMeComponent,
     PageNotFoundComponent,
     HomeComponent,

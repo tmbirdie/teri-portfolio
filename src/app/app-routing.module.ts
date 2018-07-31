@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'personal-projects', component: PersonalProjectsComponent},
   {path: 'professional-projects', component: ProfessionalProjectsComponent},
   // {path: 'resume', component: ProfessionalProjectsComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ];
 
